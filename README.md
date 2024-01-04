@@ -9,7 +9,7 @@ To get started with the development environment, follow these steps:
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/YourUsername/Major-Project-Frontend.git
+    git clone https://github.com/thamir0022/Major-Project-Front-End
     ```
 
 2. Change into the project directory:
