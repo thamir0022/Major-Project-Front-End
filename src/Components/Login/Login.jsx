@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './login.css';
 import axios from '../../Axios/axios';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+  let navigate = useNavigate()
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -17,7 +19,7 @@ function Login() {
     };
 
     // Make a POST request using Axios
-    axios.post('auth/freelance-login/', formData)
+    axios.post('/auth/login/', formData)
       .then(response => {
         console.log('Response:', response);
         // Handle success, e.g., redirect to a new page
@@ -36,7 +38,7 @@ function Login() {
   return (
     <div className="login-container">
       <form className='login' onSubmit={handleSubmit}>
-        <h4 className='title'>Welcome back</h4>
+        <h4 className='title' style={{color: 'black', fontSize: '25px'}}>Welcome back</h4>
         <input
           className='user-name'
           type="text"
@@ -57,6 +59,7 @@ function Login() {
         />
         <p style={{ display: error ? 'block' : 'none' }} className= {error ? 'err-msg' : ''}>{error}</p>
         <button className='submit-button' type='submit'>Login</button>
+        <p style={{color: 'black', fontFamily: 'sans-serif'}}>Don't have an account? <span className='login' onClick={()=>navigate('/register')}>Signup</span></p>
       </form>
     </div>
   );
