@@ -6,18 +6,20 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Register from './Components/Register/Register';
 import ClientSignup from './Components/Client-SignUp/ClientSignup';
 import FreelancerSignup from './Components/Freelancer-SignUp/FreelancerSignup';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+      <Navbar/>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path='/register' element={<Register/>}/>
           <Route path='/client-signup' element={<ClientSignup/>}/>
           <Route path='/freelancer-signup' element={<FreelancerSignup/>}/>
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

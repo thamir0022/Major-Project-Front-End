@@ -4,9 +4,10 @@
     width: 25%;
     height: 70vh;
     margin: 5% auto;
-    border: 2px solid #ccc;
+    border: none;
     border-radius: 1rem;
     min-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .form-input {
