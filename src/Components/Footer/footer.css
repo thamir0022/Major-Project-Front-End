@@ -18,8 +18,6 @@ ul{
 .footer{
 	background-color: #24262b;
     padding: 70px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     z-index: -1;
     max-height: 300px;
