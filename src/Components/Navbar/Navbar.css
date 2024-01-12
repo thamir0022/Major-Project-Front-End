@@ -27,7 +27,7 @@
 
 /* Logo */
 
-.logo {
+.logo, .company-name {
     width: 100%;
     background-size: cover;
     cursor: pointer;

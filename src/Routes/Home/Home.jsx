@@ -1,0 +1,18 @@
+import React from 'react'
+import Hero from '../../Components/Hero/Hero'
+import Card from '../../Components/Cards/Card'
+import Steps from '../../Components/Steps/Steps'
+import AdvSection from '../../Components/Section-1/AdvSection'
+
+function Home() {
+    return (
+        <div className="home-page">
+          <Hero/>
+          <Card/>
+          <Steps/>
+          <AdvSection/>
+        </div>
+    )
+}
+
+export default Home

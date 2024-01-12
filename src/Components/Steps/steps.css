@@ -1,0 +1,48 @@
+.step-title{
+    margin-left: 85px;
+    padding: 2rem;
+}
+
+.step-title h3 {
+    font-weight: 500;
+}
+
+.step-title p {
+    width: fit-content;
+    color: #868686;
+}
+
+.step-card-container {
+    display: flex;
+    width: 100%;
+    margin-left: 85px;
+    padding: 2rem;
+    height: 300px;
+}
+
+.step {
+    cursor: pointer;
+    text-align: center;
+    height: 100%;
+    width: 22%;
+    padding: 2rem;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.step h4{
+    font-size: x-large;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.step p {
+    font-weight: 400;
+}
+
+.step svg {
+    margin-bottom: 1rem;
+    color: cornflowerblue;
+}

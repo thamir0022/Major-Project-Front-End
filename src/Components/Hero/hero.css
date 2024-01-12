@@ -25,6 +25,7 @@
 .search-bar {
     width: 50%;
     height: 100%;
+    border: 2px solid white;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     background-color: transparent;
@@ -62,7 +63,7 @@
     font-size: 13px;
     position: absolute;
     z-index: 1;
-    min-width: 200px;
+    min-width: 250px;
     max-height: 300px;
     overflow-y: scroll;
     background-color: white;
@@ -75,33 +76,42 @@
     display: none;
   }
   
-  .dropdown-content a {
+  .dropdown-content button, input {
     color: black;
+    width: 100%;
     padding: 8px 10px;
     text-decoration: none;
     display: block;
     transition: .2s;
+    border: none;
     border-top: 1px solid #ccc;
     font-weight: 500;
   }
+
+  .dropdown-content input {
+    font-size: medium;
+    text-align: center;
+    background-color: white;
+    border: none;
+  }
   
-  .dropdown-content a:hover {
+  .dropdown-content button:hover {
     background-color: black;
     color: whitesmoke;
     transition: .2s;
   }
   
-  .dropdown-content a:focus {
+  .dropdown-content button:focus {
     background-color: #00000053;
     color: white;
   }
   
-  .dropdown-content #top:hover {
+  .dropdown-content .top:hover {
     border-radius: 10px;
   }
   
-  .dropdown-content #bottom:hover {
-    border-radius: 15px;
+  .dropdown-content .bottom:hover {
+    border-radius: 10px;
   }
   
   .paste-button:hover .dropdown-content {

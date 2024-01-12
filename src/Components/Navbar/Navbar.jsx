@@ -1,69 +1,71 @@
 import React from 'react'
 import './Navbar.css'
 import logo from '../../Images/work-wave-logo.png'
+import { useNavigate } from 'react-router-dom'
 function Navbar() {
+  let navigate = useNavigate()
   return (
     <div className="navbar-container">
       <nav id="navbar">
         <ul className="navbar-items flexbox-col">
           <li className="navbar-logo flexbox-left">
-            <a className="navbar-item-inner flexbox-left" style={{height: '100%'}}>
-            <img className='logo' src={logo} alt="" />
-            <h4 className='company-name'>Workwave</h4>
-            </a>
+            <div className="navbar-item-inner flexbox-left" style={{height: '100%'}} onClick={()=>navigate('/')}>
+              <img className='logo' src={logo} alt="" />
+              <h4 className='company-name'>Workwave</h4>
+            </div>
           </li>
           <li className="navbar-item flexbox-left">
-            <a className="navbar-item-inner flexbox-left">
+            <div className="navbar-item-inner flexbox-left">
               <div className="navbar-item-inner-icon-wrapper flexbox">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
                   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
                 </svg>
               </div>
               <span className="link-text">Home</span>
-            </a>
+            </div>
           </li>
           <li className="navbar-item flexbox-left">
-            <a className="navbar-item-inner flexbox-left">
+            <div className="navbar-item-inner flexbox-left">
               <div className="navbar-item-inner-icon-wrapper flexbox">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-collection-fill" viewBox="0 0 16 16">
                   <path d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1" />
                 </svg>
               </div>
               <span className="link-text">Projects</span>
-            </a>
+            </div>
           </li>
           <li className="navbar-item flexbox-left">
-            <a className="navbar-item-inner flexbox-left">
+            <div className="navbar-item-inner flexbox-left">
               <div className="navbar-item-inner-icon-wrapper flexbox">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07" />
                 </svg>
               </div>
               <span className="link-text">Dashboard</span>
-            </a>
+            </div>
           </li>
           <li className="navbar-item flexbox-left">
-            <a className="navbar-item-inner flexbox-left">
+            <div className="navbar-item-inner flexbox-left">
               <div className="navbar-item-inner-icon-wrapper flexbox">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
                   <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
                 </svg>
               </div>
               <span className="link-text">Team</span>
-            </a>
+            </div>
           </li>
           <li className="navbar-item flexbox-left">
-            <a className="navbar-item-inner flexbox-left">
+            <div className="navbar-item-inner flexbox-left">
               <div className="navbar-item-inner-icon-wrapper flexbox">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
                   <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
                 </svg>
               </div>
               <span className="link-text">Support</span>
-            </a>
+            </div>
           </li>
           <li className="navbar-item flexbox-left">
-            <a className="navbar-item-inner flexbox-left">
+            <div className="navbar-item-inner flexbox-left">
               <div className="navbar-item-inner-icon-wrapper flexbox">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                   <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
@@ -71,7 +73,7 @@ function Navbar() {
                 </svg>
               </div>
               <span className="link-text">Settings</span>
-            </a>
+            </div>
           </li>
         </ul>
       </nav>
