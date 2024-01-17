@@ -1,13 +1,14 @@
-.card-container {
+.cardContainer {
+    display: flex;
+    margin: auto;
     height: 400px;
     width: 100%;
     display: flex;
     overflow-x: scroll;
     padding: 2rem;
-    margin-left: 85px;
 }
 
-.card-container::-webkit-scrollbar {
+.cardContainer::-webkit-scrollbar {
     display: none;
 }
 
@@ -29,7 +30,7 @@
     transform: scale(1.05);
 }
 
-.card-text {
+.cardText {
     text-align: center;
     font-size: x-large;
     font-weight: 500;
@@ -37,17 +38,16 @@
     color: black;
 }
 
-.card-head-container{
-    margin-left: 85px;
+.cardHeadContainer{
     padding: 2rem;
 }
 
-.card-head-container h3{
+.cardHeadContainer h3{
     width: fit-content;
     font-weight: 500;
 }
 
-.card-head-container p{
+.cardHeadContainer p{
     width: fit-content;
     color: #868686;
 }

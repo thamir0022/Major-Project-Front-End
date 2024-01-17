@@ -1,47 +1,47 @@
 import React from 'react'
-import './footer.css'
+import styles from './footer.module.css'
 
 function Footer() {
     return (
         <div className="">
-            <footer class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer-col">
+            <footer className={styles.footer}>
+                <div className={styles.container}>
+                    <div className={styles.row}>
+                        <div className={styles.footerCol}>
                             <h4>company</h4>
                             <ul>
-                                <li><a href="#">about us</a></li>
-                                <li><a href="#">our services</a></li>
-                                <li><a href="#">privacy policy</a></li>
-                                <li><a href="#">affiliate program</a></li>
+                                <li><p className={styles.link}>about us</p></li>
+                                <li><p className={styles.link}>our services</p></li>
+                                <li><p className={styles.link}>privacy policy</p></li>
+                                <li><p className={styles.link}>affiliate program</p></li>
                             </ul>
                         </div>
-                        <div class="footer-col">
+                        <div className={styles.footerCol}>
                             <h4>get help</h4>
                             <ul>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">shipping</a></li>
-                                <li><a href="#">returns</a></li>
-                                <li><a href="#">order status</a></li>
-                                <li><a href="#">payment options</a></li>
+                                <li><p className={styles.link}>FAQ</p></li>
+                                <li><p className={styles.link}>shipping</p></li>
+                                <li><p className={styles.link}>returns</p></li>
+                                <li><p className={styles.link}>order status</p></li>
+                                <li><p className={styles.link}>payment options</p></li>
                             </ul>
                         </div>
-                        <div class="footer-col">
+                        <div className={styles.footerCol}>
                             <h4>online shop</h4>
                             <ul>
-                                <li><a href="#">watch</a></li>
-                                <li><a href="#">bag</a></li>
-                                <li><a href="#">shoes</a></li>
-                                <li><a href="#">dress</a></li>
+                                <li><p className={styles.link}>watch</p></li>
+                                <li><p className={styles.link}>bag</p></li>
+                                <li><p className={styles.link}>shoes</p></li>
+                                <li><p className={styles.link}>dress</p></li>
                             </ul>
                         </div>
-                        <div class="footer-col">
+                        <div className={styles.footerCol}>
                             <h4>follow us</h4>
-                            <div class="social-links">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <div className="socialLinks">
+                                <p className={styles.link}><i className="fab faFacebookF"></i></p>
+                                <p className={styles.link}><i className="fab faTwitter"></i></p>
+                                <p className={styles.link}><i className="fab faInstagram"></i></p>
+                                <p className={styles.link}><i className="fab faLinkedinIn"></i></p>
                             </div>
                         </div>
                     </div>

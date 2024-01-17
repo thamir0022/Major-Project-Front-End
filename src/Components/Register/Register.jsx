@@ -1,16 +1,16 @@
 import React from 'react'
-import './register.css'
+import styles from './register.module.css'
 import { useNavigate } from 'react-router-dom'
 
 function Register() {
-let navigate = useNavigate()
+  let navigate = useNavigate()
   return (
-    <div className="register-container">
-        <p>Choose your role!</p>
-        <div className="buttons">
-            <button className='freelancer-button' onClick={()=>navigate('/freelancer-signup')}>Freelancer</button>
-            <button className='client-button' onClick={()=>navigate('/client-signup')}>Client</button>
-        </div>
+    <div className={styles.registerContainer}>
+      <p>Choose your role!</p>
+      <div className={styles.buttons}>
+        <button className={styles.freelancerButton} onClick={() => navigate('/freelancer-signup')}>Freelancer</button>
+        <button className={styles.clientButton} onClick={() => navigate('/client-signup')}>Client</button>
+      </div>
     </div>
   )
 }

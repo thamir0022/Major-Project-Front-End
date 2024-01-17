@@ -1,4 +1,4 @@
-.register-container {
+.registerContainer {
     margin: 15% auto;
     height: 25vh;
     width: 30%;
@@ -17,7 +17,7 @@
     height: fit-content;
 }
 
-.register-container p {
+.registerContainer p {
     text-align: center;
     width: 100%;
     padding-top: 25px;

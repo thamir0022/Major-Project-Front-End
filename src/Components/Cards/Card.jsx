@@ -1,5 +1,5 @@
 import React from 'react'
-import './card.css'
+import styles from './card.module.css'
 import web from './Images/pexels-tranmautritam-326503.jpg'
 import ml from './Images/pexels-pavel-danilyuk-8294551.jpg'
 import ui from './Images/pexels-antoni-shkraba-4348403.jpg'
@@ -16,48 +16,48 @@ import marketing from './Images/pexels-mikael-blomkvist-6476808.jpg'
 function Card() {
   return (
     <div>
-      <div className="card-head-container">
+      <div className={styles.cardHeadContainer}>
         <h3>Browse talent by category</h3>
         <p>Get some Inspirations from 1800+ skills.</p>
       </div>
-      <div className="card-container">
-      <div className="card" style={{backgroundImage: `url(${web})`, backgroundSize: 'cover'}}>
-        <div className="card-text">Web Devolopement</div>
+      <div className={styles.cardContainer}>
+        <div className={styles.card} style={{ backgroundImage: `url(${web})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>Web Devolopement</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${ui})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>UI UX Designer</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${frontend})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>Frond End Devoloper</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${backend})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>Back End Devoloper</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${ai})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>AI Engineer</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${ml})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>ML Engineer</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${apps})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>Mobile App Devoloper</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${grapics})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>Graphics Designer</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${marketing})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>Digital Marketing</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${animation})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>Video And Animation</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${write})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>Writing And Translation</div>
+        </div>
+        <div className={styles.card} style={{ backgroundImage: `url(${music})`, backgroundSize: 'cover' }}>
+          <div className={styles.cardText}>Music And Audio</div>
+        </div>
       </div>
-      <div className="card" style={{backgroundImage: `url(${ui})`, backgroundSize: 'cover'}}>
-        <div className="card-text">UI UX Designer</div>
-      </div>
-      <div className="card" style={{backgroundImage: `url(${frontend})`, backgroundSize: 'cover'}}>
-        <div className="card-text">Frond End Devoloper</div>
-      </div>
-      <div className="card" style={{backgroundImage: `url(${backend})`, backgroundSize: 'cover'}}>
-        <div className="card-text">Back End Devoloper</div>
-      </div>
-      <div className="card" style={{backgroundImage: `url(${ai})`, backgroundSize: 'cover'}}>
-        <div className="card-text">AI Engineer</div>
-      </div>
-      <div className="card" style={{backgroundImage: `url(${ml})`, backgroundSize: 'cover'}}>
-        <div className="card-text">ML Engineer</div>
-      </div>
-      <div className="card" style={{backgroundImage: `url(${apps})`, backgroundSize: 'cover'}}>
-        <div className="card-text">Mobile App Devoloper</div>
-      </div>
-      <div className="card" style={{backgroundImage: `url(${grapics})`, backgroundSize: 'cover'}}>
-        <div className="card-text">Graphics Designer</div>
-      </div>
-      <div className="card" style={{backgroundImage: `url(${marketing})`, backgroundSize: 'cover'}}>
-        <div className="card-text">Digital Marketing</div>
-      </div>
-      <div className="card" style={{backgroundImage: `url(${animation})`, backgroundSize: 'cover'}}>
-        <div className="card-text">Video And Animation</div>
-      </div>
-      <div className="card" style={{backgroundImage: `url(${write})`, backgroundSize: 'cover'}}>
-        <div className="card-text">Writing And Translation</div>
-      </div>
-      <div className="card" style={{backgroundImage: `url(${music})`, backgroundSize: 'cover'}}>
-        <div className="card-text">Music And Audio</div>
-      </div>
-    </div>
     </div>
   )
 

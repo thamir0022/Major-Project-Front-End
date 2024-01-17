@@ -1,12 +1,11 @@
-.section-container {
+.sectionContainer {
     height: 600px;
     width: 100%;
-    margin-left: 80px;
     margin-top: 3rem;
 }
 
-.background-img {
-    max-width: 100%;
+.backgroundImg {
+    width: 100%;
     max-height: 100%;
 }
 
@@ -14,7 +13,6 @@
     position: relative;
     bottom: 450px;
     width: 40%;
-    margin-left: 40px;
     padding: 2rem;
 }
 
@@ -27,18 +25,15 @@
 .content button {
     --color: #f6cc76;
     font-family: inherit;
-    display: flex;
-    align-items: center;
     width: 8em;
-    height: 2.6em;
-    margin: 20px;
+    height: 3em;
     position: relative;
     background-color: transparent;
     overflow: hidden;
     border: 2px solid var(--color);
     transition: color .5s;
     z-index: 1;
-    font-size: 17px;
+    font-size: large;
     border-radius: 0.5rem;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -86,14 +81,14 @@
     height: 90%;
 }
 
-.containers .section-1, .section-2 {
+.containers .section1, .section2 {
     display: inline-block;
     align-items: center;
     height: 100%;
     width: 50%;
 }
 
-.section-1 .block-1, .block-2 {
+.section1 .block1, .block2 {
     text-align: center;
     margin-top: 30px;
     width: 85%;
@@ -103,7 +98,7 @@
     transition: 0.3s;
 }
 
-.section-2 .block-1 {
+.section2 .block1 {
     text-align: center;
     margin-top: 150px;
     width: 85%;
@@ -118,7 +113,7 @@
     color: #f1ab89;
 }
 
-.block-1:hover, .block-2:hover {
+.block1:hover, .block2:hover {
     transition: 0.3s;
     transform: scale(1.1);
 }

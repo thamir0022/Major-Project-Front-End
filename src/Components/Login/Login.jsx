@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './login.css';
+import styles from './login.module.css';
 import axios from '../../Axios/axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -36,11 +36,11 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <form className='login' onSubmit={handleSubmit}>
-        <h4 className='title' style={{color: 'black', fontSize: '25px'}}>Welcome back</h4>
+    <div className={styles.loginContainer}>
+      <form onSubmit={handleSubmit}>
+        <h4 className={styles.title}>Welcome back</h4>
         <input
-          className='user-name'
+          className={styles.userName}
           type="text"
           name='userName'
           placeholder='Username'
@@ -49,7 +49,7 @@ function Login() {
           required
         />
         <input
-          className='password'
+          className={styles.password}
           type="password"
           name='password'
           placeholder='Password'
@@ -57,9 +57,10 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <p style={{ display: error ? 'block' : 'none' }} className= {error ? 'err-msg' : ''}>{error}</p>
-        <button className='submit-button' type='submit'>Login</button>
-        <p style={{color: 'black', fontFamily: 'sans-serif'}}>Don't have an account? <span className='login' onClick={()=>navigate('/register')}>Signup</span></p>
+        <p className={styles.forgotPass}>Forgot Password?</p>
+        <button className={styles.submitButton} type='submit'>Login</button>
+        <p className={styles.dontHaveAnAcc}>Don't have an account? <span className={styles.login} onClick={()=>navigate('/register')}>Signup</span></p>
+        <p style={{ display: error ? 'block' : 'none' }} className= {error ? styles.errMsg : ''}>{error}</p>
       </form>
     </div>
   );
