@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './navbar.module.css'
-import logo from '../../Images/work-wave-logo.png'
+// import logo from '../../Images/work-wave-logo.png'
 // import { useNavigate } from 'react-router-dom'
 function Navbar() {
   return (

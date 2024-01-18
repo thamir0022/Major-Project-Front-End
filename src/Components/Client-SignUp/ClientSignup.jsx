@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './clientSignup.module.css'
 import { useNavigate } from 'react-router-dom'
 import axios from '../../Axios/axios'
+import companyLogo from '../../Images/work-wave-logo.png';
 
 function ClientSignup() {
   let navigate = useNavigate()
@@ -49,6 +50,7 @@ function ClientSignup() {
   return (
     <div className={styles.signupContainer}>
       <div className={styles.formInput}>
+        <img className={styles.logo} src={companyLogo} onClick={()=>navigate('/')} alt="" />
         <h3 className={styles.tag}>Create Your Account</h3>
         <form action="" onSubmit={handleSubmit}>
           <input className={styles.inputs} type="text" name='first-name' placeholder='First Name' value={firstName} onChange={(e) => setFirstName(e.target.value)} required/>

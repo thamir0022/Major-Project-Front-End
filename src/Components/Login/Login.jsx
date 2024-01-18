@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './login.module.css';
 import axios from '../../Axios/axios';
 import { useNavigate } from 'react-router-dom';
+import companyLogo from '../../Images/work-wave-logo.png';
 
 function Login() {
   let navigate = useNavigate()
@@ -30,7 +31,7 @@ function Login() {
         if (error.response && error.response.status === 401) {
           setError('Invalid username or password!');
         } else {
-          setError('An error occurred');
+          setError('An error occurred !');
         }
       });
   };
@@ -38,6 +39,7 @@ function Login() {
   return (
     <div className={styles.loginContainer}>
       <form onSubmit={handleSubmit}>
+        <img className={styles.logo} src={companyLogo} onClick={()=>navigate('/')} alt="" />
         <h4 className={styles.title}>Welcome back</h4>
         <input
           className={styles.userName}
