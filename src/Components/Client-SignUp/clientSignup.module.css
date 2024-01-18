@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     width: 25%;
-    height: 70vh;
+    height: fit-content;
     margin: 5% auto;
     border: none;
     border-radius: 1rem;
@@ -27,6 +27,10 @@
     text-align: left;
 }
 
+.inputs::placeholder {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
 .inputs:focus {
     border: 2px solid cornflowerblue;
 }
@@ -88,4 +92,19 @@
     width: 100px;
     margin: 0 auto;
     display: flex;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+}
+
+.socialIcons svg {
+    cursor: pointer;
+}
+
+.socialLoginTitle {
+    margin: 1rem auto;
+    text-align: center;
 }

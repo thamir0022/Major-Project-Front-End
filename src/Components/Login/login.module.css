@@ -1,7 +1,7 @@
 .loginContainer {
     display: flex;
     margin: 15vh auto;
-    height: 50vh;
+    height: fit-content;
     width: 20%;
     min-width: 300px;
     min-height: 350px;
@@ -42,6 +42,10 @@ form{
     font-size: medium;
     background-color: transparent;
     text-align: left;
+}
+
+.userName::placeholder, .password::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .submitButton {
@@ -97,6 +101,7 @@ form{
     background-color: rgba(255, 0, 0, 0.176);
     padding: 5px 10px;
     border-radius: 5px;
+    margin: 0.5rem auto;
 }
 
 .forgotPass {
@@ -130,4 +135,18 @@ form{
     cursor: pointer;
     width: 100px;
     margin: 0;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+}
+
+.socialIcons svg {
+    cursor: pointer;
+}
+
+.socialLoginTitle {
+    margin-top: 0.5rem;
 }
